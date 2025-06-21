@@ -4,15 +4,16 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Cocktails from "./components/Cocktails";
 import { useEffect, useState } from "react";
+import About from "./components/About";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   useEffect(() => {
-    setTimeout(() => {
+    document.fonts.ready.then(() => {
       setIsLoaded(true);
-    }, 500);
+    }); 
   }, [isLoaded]);
 
   if (!isLoaded)
@@ -28,6 +29,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <Cocktails />
+      <About />
     </main>
   );
 };
