@@ -88,11 +88,7 @@ body {
         @apply absolute inset-0 size-full bg-[url("/images/noise.png")];
     }
 
-    #hero {@import "tailwindcss";
-
-@utility flex-center {
-    @apply flex items-center justify-center;
-}
+    #hero {
         @apply relative z-10 min-h-dvh w-full border border-transparent;
 
         h1 {
@@ -264,11 +260,7 @@ body {
                 @apply text-4xl md:text-5xl font-modern-negra text-center mb-10 text-white mt-32;
             }
 
-            div@import "tailwindcss";
-
-@utility flex-center {
-    @apply flex items-center justify-center;
-} {
+            div {
                 @apply opacity-0 md:px-0 px-5 space-y-5 absolute md:bottom-5 bottom-52 left-1/2 -translate-x-1/2;
 
                 h3 {
