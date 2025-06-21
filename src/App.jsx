@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Cocktails from "./components/Cocktails";
 import { useEffect, useState } from "react";
 import About from "./components/About";
+import Art from "./components/Art";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -30,6 +31,7 @@ const App = () => {
       <Hero />
       <Cocktails />
       <About />
+      <Art />
     </main>
   );
 };
